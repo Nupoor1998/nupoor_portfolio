@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/nupoor_portfolio/static/css/main.5cf4b98f.css",
+    "main.js": "/nupoor_portfolio/static/js/main.94768a4f.js",
+    "static/js/787.fb771931.chunk.js": "/nupoor_portfolio/static/js/787.fb771931.chunk.js",
+    "static/media/fresh-harvest.png": "/nupoor_portfolio/static/media/fresh-harvest.e4099bcf014be8247890.png",
+    "static/media/healthtrack.png": "/nupoor_portfolio/static/media/healthtrack.aef60fda49ee36d2b250.png",
+    "static/media/IMG_7381_Original.jpg": "/nupoor_portfolio/static/media/IMG_7381_Original.d807d3fcff641db2287b.jpg",
+    "static/media/portfolio.png": "/nupoor_portfolio/static/media/portfolio.a8f8097975bed48988d4.png",
+    "static/media/header-img.svg": "/nupoor_portfolio/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg",
+    "static/media/CentraNo2-Bold.ttf": "/nupoor_portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/nupoor_portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/nupoor_portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/footer-bg.png": "/nupoor_portfolio/static/media/footer-bg.7bd67c0f73571d0acc02.png",
+    "static/media/weatherapp.png": "/nupoor_portfolio/static/media/weatherapp.bae2d70a0b690527c0b4.png",
+    "static/media/logo.svg": "/nupoor_portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/nav-icon3.svg": "/nupoor_portfolio/static/media/nav-icon3.08b285abb8e118b52637efa5d65c5367.svg",
+    "index.html": "/nupoor_portfolio/index.html",
+    "static/media/nav-icon1.svg": "/nupoor_portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
+    "static/media/nav-icon2.svg": "/nupoor_portfolio/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
+    "main.5cf4b98f.css.map": "/nupoor_portfolio/static/css/main.5cf4b98f.css.map",
+    "main.94768a4f.js.map": "/nupoor_portfolio/static/js/main.94768a4f.js.map",
+    "787.fb771931.chunk.js.map": "/nupoor_portfolio/static/js/787.fb771931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5cf4b98f.css",
+    "static/js/main.94768a4f.js"
+  ]
+}
