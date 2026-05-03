@@ -2,40 +2,56 @@ import { Container } from "react-bootstrap";
 
 const items = [
   {
-    title: "Software Engineer",
-    place: "KGS Technology",
-    time: "July 2025 – Present",
-    body: "I work on improving the reporting ecosystem by implementing server side data handling, refining core UI components, and contributing to cloud deployments. My role involves enhancing performance across the application and collaborate with the team to deliver stable, scalable features."
+    title: "Senior Software Engineer",
+    place: "KGS Technology, WA",
+    time: "Jul 2025 – Present",
+    bullets: [
+      "Built Java/Spring Boot backend workflows with server-side pagination, cutting report load times by 35%",
+      "Engineered GraphQL APIs to persist user report preferences and refactored React state management, reducing re-renders by 45%",
+      "Refactored 16+ React UI modules into reusable components using GitHub Copilot, reducing average module delivery time by 40%",
+      "Leveraged Datadog APM to trace distributed requests, identifying bottlenecks and reducing production MTTD by 30%",
+    ],
   },
   {
     title: "Software Engineer",
-    place: "Rebecca Everlene Trust Company, Chicago, US",
-    time: "Sep 2024 – Jun 2025",
-    body: "I built modular React features, improved real time data handling with modern state tools, and updated WordPress templates with caching enhancements to deliver a smoother and faster user experience."
+    place: "Rebecca Everlene Trust Company, Chicago, IL",
+    time: "Sep 2024 – Jul 2025",
+    bullets: [
+      "Built Java/Spring Boot microservices for electronic prescription workflows, implementing role-based access, audit logging, and secure PHI handling in a HIPAA-regulated environment",
+      "Developed React-based pharmacy dashboards with Redux Toolkit, boosting task efficiency by 30%",
+      "Led migration to Kafka-based event-driven architecture, improving refill notification reliability by 25%",
+      "Deployed Dockerized services on AWS with Kubernetes and Jenkins CI/CD, sustaining 99.9% uptime",
+    ],
   },
   {
     title: "Software Engineering Intern",
-    place: "SDI Presence, Chicago, US",
+    place: "SDI Presence, Chicago, IL",
     time: "Feb 2023 – Aug 2023",
-    body: "As a software engineering intern, I helped build backend features, supported API development, and contributed to improving how the system performed across different parts of the platform."
-  },
-  {
-    title: "Master of Science in Information Systems",
-    place: "Northeastern University, Boston, MA, US",
-    time: "Sep 2022 – Apr 2024",
-    body: "Graduated with GPA: 3.8/4, with the strong foundation in Information Systems focusing on web technologies, data engineering, and system design."
+    bullets: [
+      "Engineered reusable React components with Redux Toolkit and React Query, accelerating feature delivery by 30%",
+      "Boosted API responsiveness by 25% through async workflows, Redis caching, and eliminating redundant network calls",
+    ],
   },
   {
     title: "Software Engineer",
-    place: "Accenture Solutions Pvt. Ltd, Pune, India",
+    place: "Accenture Solutions Pvt. Ltd., Pune, India",
     time: "Feb 2021 – Aug 2022",
-    body: "As my first professional role, I supported core engineering tasks across the application. This included working with SQL processes, assisting with backend logic, and helping improve how different parts of the system operated together in daily use."
+    bullets: [
+      "Designed an SLA-driven incident triage system with automated priority scoring, cutting average resolution time by 18%",
+      "Optimized SQL/T-SQL reporting pipelines with pre-aggregation strategies, improving data throughput by 15%",
+    ],
   },
   {
-    title: "Bachelor of Engineering in Electronics and Telecommunication",
-    place: "Sinhgad Institute of Technology and Science, Pune, India",
-    time: "Jul 2016 – Apr 2020",
-    body: "Graduated with GPA: 8.9/10, majoring in Electronics and Telecommunication."
+    title: "Master of Science in Information Systems",
+    place: "Northeastern University, Boston, MA",
+    time: "May 2024",
+    bullets: [],
+  },
+  {
+    title: "Bachelor of Engineering",
+    place: "Pune University, Pune, India",
+    time: "Apr 2020",
+    bullets: [],
   },
 ];
 
@@ -53,7 +69,13 @@ export const Experience = () => (
                 <span className="time">{it.time}</span>
               </div>
               <div className="place">{it.place}</div>
-              <p>{it.body}</p>
+              {it.bullets.length > 0 && (
+                <ul className="timeline-bullets">
+                  {it.bullets.map((b, j) => (
+                    <li key={j}>{b}</li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         ))}

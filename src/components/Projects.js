@@ -1,7 +1,6 @@
 import { useState, useMemo } from "react";
 import { Container, Row, Col, ButtonGroup, Button } from "react-bootstrap";
 
-
 import projHarvest from "../assets/img/fresh-harvest.png";
 import projHealth from "../assets/img/healthtrack.png";
 import projWeather from "../assets/img/weatherapp.png";
@@ -9,36 +8,36 @@ import projPortfolio from "../assets/img/portfolio.png";
 
 const PROJECTS = [
   {
-    title: "HealthTrack",
-    category: "UX",
+    title: "NutriSage",
+    category: "AI",
     img: projHealth,
     desc:
-      "User-centered health tracking prototype with Figma flows and interactive components. Delivered a full design spec for developers.",
-    tech: ["Figma", "UX Flows"],
+      "RAG-based nutrition assistant built with LangChain and FAISS. Designed ingestion, chunking, embedding, and retrieval workflows across 7+ nutrition sources, improving response relevance through 5+ evaluation iterations. Shipped with a Streamlit interface for interactive, source-grounded dietary guidance.",
+    tech: ["Python", "LangChain", "FAISS", "RAG Pipelines", "LLM APIs", "Streamlit"],
     links: {
-      github: "https://github.com/Nupoor1998/HealthTrack",
+      github: "https://github.com/Nupoor1998/NutriSage",
     },
   },
   {
-    title: "Fresh Harvest – Online Grocery",
-    category: "Web",
-    img: projHarvest,
-    desc:
-      "Responsive e-commerce UI with React + Bootstrap, customer/admin flows, secure auth, and smooth navigation.",
-    tech: ["React", "Bootstrap"],
-    links: {
-      github: "https://github.com/Nupoor1998/Fresh-Harvest",
-    },
-  },
-  {
-    title: "WeatherApp",
+    title: "Collaborative Document Editor",
     category: "Web",
     img: projWeather,
     desc:
-      "Real-time weather using OpenWeather API with clean search UI, error handling, and dynamic visuals.",
-    tech: ["JavaScript", "OpenWeather API"],
+      "Real-time multi-user document editor with WebSocket-based sync, Firebase Auth, and reusable component interfaces. Enabled controlled document sharing via unique access links with persistent storage and instant cross-client updates.",
+    tech: ["React", "Next.js", "TypeScript", "Firebase", "WebSockets"],
     links: {
-      github: "https://github.com/Nupoor1998/NodeReact-FullstackWeatherApp",
+      github: "https://github.com/Nupoor1998/Collaborative-Document-Editor",
+    },
+  },
+  {
+    title: "Fresh Harvest",
+    category: "Web",
+    img: projHarvest,
+    desc:
+      "Full-stack e-commerce platform with role-based flows, OTP authentication, and PayPal checkout. Built with React, TypeScript, Node.js, Express, and MongoDB. Deployed on Heroku with server-side pagination, reducing page load times by 40%.",
+    tech: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "REST APIs"],
+    links: {
+      github: "https://github.com/Nupoor1998/Fresh-Harvest",
     },
   },
   {
@@ -46,13 +45,13 @@ const PROJECTS = [
     category: "Web",
     img: projPortfolio,
     desc:
-      "Personal portfolio built with React and a11y-minded UI; sections for About, Skills, Projects, and Contact.",
+      "Personal portfolio built with React showcasing projects, skills, and experience with a11y-minded UI.",
     tech: ["React", "CSS"],
     links: {},
   },
 ];
 
-const TABS = ["All", "Web", "UX"];
+const TABS = ["All", "AI", "Web"];
 
 export const Projects = () => {
   const [tab, setTab] = useState("All");
@@ -67,7 +66,6 @@ export const Projects = () => {
       <Container>
         <h2 className="proj-title">Projects</h2>
 
-        {/* Filter Tabs */}
         <div className="proj-tabs-wrap">
           <ButtonGroup className="proj-tabs" aria-label="Project filters">
             {TABS.map(t => (
@@ -83,7 +81,6 @@ export const Projects = () => {
           </ButtonGroup>
         </div>
 
-        {/* Grid */}
         <Row className="g-4">
           {visible.map((p, i) => (
             <Col key={i} md={6} lg={4}>

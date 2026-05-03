@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Software Engineer"];
+  const toRotate = ["Senior Software Engineer", "Full Stack Engineer", "AI-Native Builder"];
   const period = 2000;
 
   useEffect(() => {
@@ -57,7 +57,7 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
         
         <h1 className="banner-title">Hello! I’m <span className="name">Nupoor Korde,</span>{" "}<span className="txt-rotate"><span className="wrap">{text}</span></span></h1>
-                  <p>I'm a Software Engineer focused on clean code, great UX, and performance-driven systems.</p>
+                  <p>Full Stack Engineer with 4+ years shipping production systems in healthcare, enterprise, and AI domains — specializing in React, Java/Spring Boot microservices, and LangChain-powered RAG pipelines.</p>
                   <a className="btn-resume" href={`${process.env.PUBLIC_URL}/Nupoor Korde_Resume.pdf`} download><ArrowRightCircle size={25} style={{ marginRight: "8px" }} />Download Resume </a>
               </div>}
             </TrackVisibility>

@@ -2,34 +2,34 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const skills = [
   {
-    icon: "🧩",
-    category: "Frontend Development",
-    items: ["React.js", "JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3", "Bootstrap", "SASS", "Material-UI", "AngularJS"],
+    icon: "💻",
+    category: "Languages",
+    items: ["Java", "TypeScript", "JavaScript", "Python", "SQL", "HTML", "CSS"],
   },
   {
-    icon: "🎨",
-    category: "UI/UX & Design Tools",
-    items: ["Figma", "Adobe XD", "Balsamiq", "Moqups", "Wireframing", "Responsive Design", "Accessibility", "Cross-Browser Testing"],
+    icon: "🖥️",
+    category: "Frontend",
+    items: ["React.js", "Next.js", "Redux Toolkit", "React Query", "GraphQL", "WebSockets"],
   },
   {
-    icon: "🔗",
-    category: "Backend & APIs",
-    items: ["REST APIs", "Node.js (project experience)", "JSON", "Postman"],
+    icon: "⚙️",
+    category: "Backend",
+    items: ["Spring Boot", "Node.js", "Express.js", "REST APIs", "Microservices"],
   },
   {
-    icon: "🛠️",
-    category: "Web & CMS Tools",
-    items: ["WordPress", "Git", "GitHub", "Version Control", "Agile/Scrum collaboration"],
+    icon: "🗄️",
+    category: "Databases & Messaging",
+    items: ["PostgreSQL", "MongoDB", "Redis", "Kafka", "FAISS"],
   },
   {
     icon: "☁️",
-    category: "Data & Cloud (academic/project exposure)",
-    items: ["MySQL", "Oracle", "AWS (basic cloud deployment)", "ETL concepts"],
+    category: "Cloud & DevOps",
+    items: ["AWS (CloudFormation, EC2, S3, Lambda)", "Docker", "Kubernetes", "Jenkins", "Firebase", "Heroku", "Git"],
   },
   {
-    icon: "⚡",
-    category: "Other Technical Practices",
-    items: ["Performance Optimization (lazy loading, minification)", "Asynchronous Rendering", "API Integration", "User-centric Design"],
+    icon: "🤖",
+    category: "AI & Tools",
+    items: ["LangChain", "RAG Pipelines", "LLM APIs", "Cursor", "GitHub Copilot", "Streamlit", "Agile/Scrum"],
   },
 ];
 
